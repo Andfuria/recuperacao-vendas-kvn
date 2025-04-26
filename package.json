@@ -1,0 +1,12 @@
+{
+  "name": "recuperacao-vendas",
+  "version": "1.0.0",
+  "description": "Sistema de recuperação de vendas via WhatsApp usando Cloudflare Workers e Gupshup.io",
+  "main": "src/worker.js",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "author": "",
+  "license": "MIT"
+} 
