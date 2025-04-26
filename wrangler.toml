@@ -2,9 +2,7 @@ name = "recuperacao-vendas"
 main = "src/worker.js"
 compatibility_date = "2024-06-01"
 
-routes = [
-  { pattern = "/webhook", script = "src/worker.js" }
-]
+routes = ["/webhook"]
 
 [[queues.producers]]
 binding = "RECUPERACAO_QUEUE"
@@ -14,7 +12,6 @@ queue = "recuperacao-vendas"
 queue = "recuperacao-vendas"
 max_batch_size = 10
 max_batch_timeout = 30
-script = "src/queue-consumer.js"
 
 [vars]
 GUPSHUP_APIKEY = "sua_apikey"
